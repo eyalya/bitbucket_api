@@ -9,7 +9,7 @@ setup(
     author_email='eyalyaish@gmail.com',
     license='MIT',
 
-    py_modules=['bitbucket_api'],
+    packages=['bitbucket_api'],
     install_requires=[
         "requests",
     ]
