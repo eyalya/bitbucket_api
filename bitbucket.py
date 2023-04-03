@@ -1,5 +1,3 @@
-__version__ = 'dev'
-
 import requests
 import json
 import string
