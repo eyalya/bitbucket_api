@@ -2,9 +2,6 @@ import requests
 import json
 import string
 
-def hello_world():
-    print("This is my first pip package!")
-
 class Bitbucket():
     def __init__(self, username, password, workspace):
         self.username   = username
