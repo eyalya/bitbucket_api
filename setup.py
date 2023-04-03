@@ -11,4 +11,7 @@ setup(
     author_email='eyalyaish@gmail.com',
 
     py_modules=['bitbucket_api'],
+    install_requires=[
+        'requests'
+    ]
 )
