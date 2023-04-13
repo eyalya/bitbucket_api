@@ -3,11 +3,14 @@ import json
 import string
 
 class Bitbucket():
-    def __init__(self, username, password, workspace):
+    def __init__(self, username, password, workspace=None):
         self.username   = username
         self.password   = password
-        self.workspace  = workspace
-        self.base_url   = f"https://api.bitbucket.org/2.0/repositories/{self.workspace}"
+        if workspace:
+            self.workspace  = workspace
+            self.base_url   = f"https://api.bitbucket.org/2.0/repositories/{self.workspace}"
+        else:
+            self.base_url   = "https://api.bitbucket.org/2.0/repositories/"
 
     def SetVar(self, repo_name, payload, deployment_uuid=None):
         
